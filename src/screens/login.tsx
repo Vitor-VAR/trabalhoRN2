@@ -85,7 +85,6 @@ const Login = () => {
     } finally {
       setIsLoading(false);
     }
-    // setIsLoading(false);
   };
 
   return (
@@ -110,7 +109,7 @@ const Login = () => {
           onChangeText={p => setPassword(p)}
           value={password}
         />
-        <Button color="#e77a6c" activeOpacity={0.7} onPress={loginUser}>
+        <Button color="#ab0505" activeOpacity={0.7} onPress={loginUser}>
           <Label>LOGIN</Label>
         </Button>
         {isLoading && (

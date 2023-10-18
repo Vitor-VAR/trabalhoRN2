@@ -23,8 +23,8 @@ const Logo = styled.Image`
 const ContentWrapper = styled.View`
   background-color: #242238;
   flex: 0.3;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
   padding: 16px;
 `;
 
@@ -35,8 +35,9 @@ const Row = styled.View`
 
 const Title = styled.Text<TextProps>`
   font-size: 32px;
-  color: ${props => props.color};
+  color: ${param => param.color};
   text-align: center;
+  font-weight: bold;
   margin: 24px 0 0 0;
 `;
 
@@ -58,15 +59,14 @@ const Welcome = () => {
       </ImageContainer>
       <ContentWrapper>
         <Row>
-          <Title color="#fff">Mercado </Title>
-          <Title color="#D6796C">Online</Title>
+          <Title color="#FFF">PromoTable </Title>
         </Row>
-        <Subtitle>Sua solução de mercado completa!</Subtitle>
+        <Subtitle color="#000000">Promoção na palma da sua mão!</Subtitle>
         <Button
           activeOpacity={0.7}
-          buttonColor="#e77a6c"
-          labelColor="#fff"
-          title="QUERO CONHECER"
+          buttonColor="#ab0505"
+          labelColor="#000000"
+          title="APROVEITAR"
           onPress={() => navigate('Login')}
         />
       </ContentWrapper>

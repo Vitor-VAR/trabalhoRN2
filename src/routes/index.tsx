@@ -111,7 +111,7 @@ const Routes = () => {
       screenOptions={({route}) => ({
         headerShown: false,
         tabBarIcon: props => <TabBarIcon {...props} name={route.name} />,
-        tabBarActiveTintColor: '#62C567',
+        tabBarActiveTintColor: '#ab0505',
         tabBarInactiveTintColor: 'gray',
       })}>
       <Tab.Screen name="Home" component={HomeStackScreen} />
@@ -145,17 +145,7 @@ const Routes = () => {
           }}
         />
       </Stack.Navigator>
-      {/* <Tab.Navigator
-        screenOptions={({route}) => ({
-          headerShown: false,
-          tabBarIcon: props => <TabBarIcon {...props} name={route.name} />,
-          tabBarActiveTintColor: '#62C567',
-          tabBarInactiveTintColor: 'gray',
-        })}>
-        <Tab.Screen name="Home" component={HomeStackScreen} />
-        <Tab.Screen name="Compras" component={OrderStackScreen} />
-        <Tab.Screen name="Ajustes" component={SettingsScreen} />
-      </Tab.Navigator> */}
+      {}
     </NavigationContainer>
   );
 };
